@@ -6,39 +6,39 @@ document.body.append(container)
 
 var row = 1;
 
-function red(){
+function randomColors(){
     var div = document.createElement('div')
     div.style.width = "11.1%";
     div.style.float = "left"
     div.style.paddingBottom = "11.1%";
-    div.style.background = "red";
+    div.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
     div.style.border = '1px solid black';
     container.append(div);
 }
-function black(){
-    var div = document.createElement('div')
-    div.style.width = "11.1%";
-    div.style.float = "left"
-    div.style.paddingBottom = "11.1%";
-    div.style.background = "black";
-    div.style.border = '1px solid black';
-    container.append(div);
-   }
-
+// function black(){
+//     var div = document.createElement('div')
+//     div.style.width = "11.1%";
+//     div.style.float = "left"
+//     div.style.paddingcdBottom = "11.1%";
+//     div.style.background = "black";
+//     div.style.border = '1px solid black';
+//     container.append(div);
+//    }
+// 
 for(let i = 0; i < 8; i++) {
  for(var j = 0; j < 8; j++) {
     if(row % 2 === 0) {
     if(j % 2 === 0) {
-        red();
+        randomColors();
     } else {
-        black();
+        randomColors();
     }
-    } else {
+     } else {
         if(j % 2 === 0) {
-            black();
+            randomColors();
         } else {
-            red();
-            }
+            randomColors();
+     }
     }
   } 
     row++;
