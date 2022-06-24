@@ -15,16 +15,7 @@ function randomColors(){
     div.style.border = '1px solid black';
     container.append(div);
 }
-// function black(){
-//     var div = document.createElement('div')
-//     div.style.width = "11.1%";
-//     div.style.float = "left"
-//     div.style.paddingcdBottom = "11.1%";
-//     div.style.background = "black";
-//     div.style.border = '1px solid black';
-//     container.append(div);
-//    }
-// 
+
 for(let i = 0; i < 8; i++) {
  for(var j = 0; j < 8; j++) {
     if(row % 2 === 0) {
